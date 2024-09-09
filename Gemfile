@@ -24,11 +24,11 @@ end
 
 group :development do
   gem "web-console"
-  gem "sqlite3", ">= 1.4"
+  #gem "sqlite3", ">= 1.4"
 end
 
 group :production do
-  gem 'pg', '~> 1.5', '>= 1.5.8'
+  gem 'pg'
 end
 
 group :test do
