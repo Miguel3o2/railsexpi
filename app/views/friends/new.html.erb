@@ -1,0 +1,11 @@
+<% content_for :title, "Add New Friend" %>
+
+<h1>Add New Friend</h1>
+<br>
+<%= render "form", friend: @friend, submit_label: "Create Friend", class: "btn btn-secondary" %>
+
+<br>
+
+<div>
+  <%= link_to "Back", friends_path , class:"btn btn-dark"%>
+</div>

@@ -1,0 +1,21 @@
+<div id="<%= dom_id friend %>" class="card mb-3 shadow-sm">
+  <div class="card-body">
+    <h1 class="card-title"><%= friend.first_name %> <%= friend.last_name %></h1>
+    <p class="card-text">
+      <%= friend.email %> |
+      <%= friend.phone %> | 
+      <%= friend.twitter %> |
+      <%= friend.instagram %> |
+    </p>
+
+    <br>
+    <div class="d-flex gap-2">
+      <%= link_to 'Edit', edit_friend_path(friend), class: 'btn btn-secondary' %>
+      <%= link_to 'Back', friends_path, class: 'btn btn-dark' %>
+      <%= button_to 'Delete', '#', method: :delete, class: 'btn btn-danger', data: { bs_toggle: "modal", bs_target: "#deleteModal_#{friend.id}" } %>
+    </div>
+  </div>
+</div>
+
+
+
