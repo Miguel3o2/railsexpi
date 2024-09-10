@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-  ruby "3.2.2"
+  ruby "3.1.6"
 gem "rails", "~> 7.2.1"
 gem "sprockets-rails"
  
@@ -16,6 +16,7 @@ gem 'devise-bootstrap-views', '~> 1.0', '>= 1.0.1'
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
